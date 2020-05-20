@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My project</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="inner-header">Шапка</div>
+		</div>
+		<div class="clearfix">
+			 <div class="sidebar-1">
+		   	<div class="inner-sidebar-1">Сайдбар #1</div>
+		   </div>
+			<div class="content">
+				<div class="inner-content">Контент</div>
+			</div>
+			<div class="sidebar-2">
+		   	<div class="inner-sidebar-2">Сайдбар #2</div>
+		</div>
+		</div>
+		<div class="footer">
+			<div class="inner-footer">Футер</div>
+		</div>
+  <main>
+	  <div id="map"></div>
+  </main>
+
+<script>
+function initMap() {
+  var uluru = {lat: 48.3802897, lng: 26.0005153};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 8, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiLS3zrUOm-e-g58NOhDhshl03Vj7hD9Q&callback=initMap">
+    </script>
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

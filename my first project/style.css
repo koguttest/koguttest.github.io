@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	color: black;
+	font-size:35px; 
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+.header{ 
+	margin-bottom:10px;  
+}
+.inner-header{
+background:#4B8AF3;
+	height: 200px;
+}
+.header:hover{
+font-size: 100px;
+color: red;
+}
+.content{
+	width: 70%;
+	float: left;
+}
+.inner-content{
+		background:#4B8AF3;
+		min-height: 500px;
+}
+.content:hover{
+font-size: 100px;
+color: red;
+}
+.sidebar-1{
+	width: 15%;
+	float: left;
+	padding-right: 10px; 
+	}
+.inner-sidebar-1{
+		background:#4B8AF3;
+		min-height: 500px;
+}
+.sidebar-1:hover{
+font-size: 100px;
+color: red;
+}
+
+.sidebar-2{
+	width: 15%;
+	float: left;
+	padding-left:10px; 
+	}
+.inner-sidebar-2{
+		background:#4B8AF3;
+		min-height: 500px;
+}
+.sidebar-2:hover{
+font-size: 100px;
+color: red;
+}
+.footer{
+	margin-top:10px;
+}
+.inner-footer{
+		background:#4B8AF3;
+		height: 200px; 
+}
+.footer:hover{
+font-size: 100px;
+color: red;
+}
+#map{
+	width:100% ;
+	height: 400px;
+}
